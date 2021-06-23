@@ -1,86 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
- 
-      <div class="row time9">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+
+  <div class="container">
+    <div id="timeColor">
+      <div id="pastHours">
+        <div class="row time9" id="timeColor9">
           <div class="col-1 time-block">9 AM</div>
-          <div class="col-10"><textarea class="event textarea"></textarea></div>
+          <div class="col-10"><textarea class="event9 textarea"></textarea></div>
           <div class="col-1 saveBtn btn">Save</div>
         </div>
-        <div class="row time10">
+        <div class="row time10" id="timeColor10">
           <div class="col-1 time-block">10 AM</div>
-          <div class="col-10"><textarea class="event textarea"></textarea></div>
+          <div class="col-10"><textarea class="event10 textarea"></textarea></div>
           <div class="col-1 saveBtn btn">Save</div>
         </div>
-        <div class="row time11">
+        <div class="row time11" id="timeColor11">
           <div class="col-1 time-block">11 AM</div>
-          <div class="col-10"><textarea class="event textarea"></textarea></div>
+          <div class="col-10"><textarea class="event11 textarea"></textarea></div>
           <div class="col-1 saveBtn btn">Save</div>
         </div>
-        <div class="row time12">
+        <div class="row time12" id="timeColor12">
           <div class="col-1 time-block">12 PM</div>
-          <div class="col-10"><textarea class="event textarea"></textarea></div>
+          <div class="col-10"><textarea class="event12 textarea"></textarea></div>
           <div class="col-1 saveBtn btn">Save</div>
         </div>
-        <div class="row time1">
+        <div class="row time1" id="timeColor1">
           <div class="col-1 time-block">1 PM</div>
-          <div class="col-10"><textarea class="event textarea"></textarea></div>
+          <div class="col-10"><textarea class="event1 textarea"></textarea></div>
           <div class="col-1 saveBtn btn">Save</div>
         </div>
-        <div class="row time2">
+        <div class="row time2" id="timeColor2">
           <div class="col-1 time-block">2 PM</div>
-          <div class="col-10"><textarea class="event textarea"></textarea></div>
+          <div class="col-10"><textarea class="event2 textarea"></textarea></div>
           <div class="col-1 saveBtn btn">Save</div>
         </div>
-        <div class="row time3">
+        <div class="row time3" id="timeColor3">
           <div class="col-1 time-block">3 PM</div>
-          <div class="col-10"><textarea class="event textarea"></textarea></div>
+          <div class="col-10"><textarea class="event3 textarea"></textarea></div>
           <div class="col-1 saveBtn btn">Save</div>
         </div>
-        <div class="row time4">
+        <div class="row time4" id="timeColor4">
           <div class="col-1 time-block">4 PM</div>
-          <div class="col-10"><textarea class="event textarea"></textarea></div>
+          <div class="col-10"><textarea class="event4 textarea"></textarea></div>
           <div class="col-1 saveBtn btn">Save</div>
         </div>
-      
-        <div class="row time5">
+        <div class="row time5" id="timeColor5">
           <div class="col-1 time-block">5 PM</div>
-          <div class="col-10"><textarea class="event textarea"></textarea></div>
+          <div class="col-10"><textarea class="event5 textarea"></textarea></div>
           <div class="col-1 saveBtn btn">Save</div>
         </div>
-
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
